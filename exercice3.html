@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice3.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Merci de bien vouloir remplir ce formulaire</p>
+        <form>
+            <fieldset class="personnel-info">
+                <legend>Informations personnelles</legend>
+                
+                <label for="nom">Nom ou Nick :</label>
+                <input type="text" id="nom" name="nom" required>
+<br>
+                <label for="ville">Ville - Pays :</label>
+                <input type="text" id="ville" name="ville" value="Grenoble - France" >
+<br>
+                <label for="sexe">Sexe :</label>
+                <input type="radio" id="masculin" name="sexe" value="Masculin">
+                <label for="masculin">Masculin</label>
+                <input type="radio" id="feminin" name="sexe" value="Féminin">
+                <label for="feminin">Féminin</label>
+     
+             <br>
+                <label for="age">Âge :</label>
+                <select id="age" name="age">
+                    <option value="0-15">0-15</option>
+                    <option value="16-25">16-25</option>
+                    <option value="26-40">26-40</option>
+                    <option value="41+">41+</option>
+                </select>
+            </fieldset>
+
+            <div class="feedback-section">
+                <fieldset class="avis">
+                    <legend>Votre avis m'intéresse</legend>
+
+                    <label>Vous pensez que cette leçon :</label>
+                    <input type="checkbox" id="claire" name="avis" value="Est très claire">
+                    <label for="claire">Est très claire</label>
+                    
+                    <input type="checkbox" id="utile" name="avis" value="Est utile">
+                    <label for="utile">est utile</label>
+                    
+                    <input type="checkbox" id="ameliore" name="avis" value="Doit être complétée et améliorée">
+                    <label for="ameliore">Doit être complétée et améliorée</label>
+
+                    <label for="graphisme">Le graphisme en est :</label>
+                    <select id="graphisme" name="graphisme" multiple>
+                        <option value="Sympa">Sympa</option>
+                        <option value="Moyen">Moyen</option>
+                        <option value="A revoir">A revoir</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="suggestions">
+                    <legend>Des suggestions ?</legend>
+                    <textarea id="suggestions" name="suggestions" rows="5" placeholder="Tapez ici vos remarques"></textarea>
+                </fieldset>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Envoyer</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

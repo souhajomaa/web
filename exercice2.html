@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice2.css">
+    <title>Pique-nique de fin d'année</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pique-nique de fin d'année</h1>
+        <h2>Inscription</h2>
+
+        <form>
+            <fieldset class="identification">
+                <legend>Je m'identifie</legend>
+                <label for="prenom">Mon prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="classe">Ma classe :</label>
+                <select id="classe" name="classe" required>
+                    <option value="">Sélectionnez votre classe</option>
+                    <optgroup label="Secondes">
+                        <option value="Seconde 1">Seconde 1</option>
+                        <option value="Seconde 5">Seconde 5</option>
+                    </optgroup>
+                    <optgroup label="Premières">
+                        <option value="Première S2">Première S2</option>
+                        <option value="Première S2">Première ES1</option>
+
+                    </optgroup>
+                    <optgroup label="Terminales">
+                        <option value="Terminale ES1">Terminale ES1</option>
+                        <option value="Terminale ES2">Terminale ES2</option>
+                    </optgroup>
+                </select>
+
+                <label for="email">Mon E-mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Mon mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+
+            <fieldset class="information">
+                <legend>J'informe</legend>
+                <table>
+                    <tr>
+                        <td>
+                <label>Mes disponibilités :</label>
+            </td>
+            <td>
+                <input type="checkbox" id="lundi" name="disponibilite" value="Lundi 10 juin">
+            
+                <label for="lundi">Lundi 10 juin</label>
+            </td>
+            <td>
+                <input type="checkbox" id="mardi" name="disponibilite" value="Mardi 11 juin">
+                <label for="mardi">Mardi 11 juin</label>
+            </td>
+            <td>
+                <input type="checkbox" id="mercredi" name="disponibilite" value="Mercredi 12 juin">
+                <label for="mercredi">Mercredi 12 juin</label>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                <label>J'apporterai :</label>
+            </td>
+            <td>
+                <input type="radio" id="entree" name="apporter" value="Une entrée" required>
+                <label for="entree">Une entrée</label>
+            </td>
+            <td>
+                <input type="radio" id="plat" name="apporter" value="Un plat">
+                <label for="plat">Un plat</label>
+            </td>
+            <td>
+                <input type="radio" id="dessert" name="apporter" value="Un dessert">
+                <label for="dessert">Un dessert</label>
+            </td>
+            </tr>
+            </table>
+            <br>
+            <div class="message" >
+                <label for="message" id="message">Je laisse un message: </label>
+                <textarea id="message" name="message" rows="5" placeholder="Maximum 160 caractères !"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit">Je m'inscris</button>
+                <button type="reset">Je réinitialise le formulaire</button>
+            </div>
+            </fieldset>
+
+          
+        </form>
+    </div>
+</body>
+</html>
